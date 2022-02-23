@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(https://wallpaperboat.com/wp-content/uploads/2019/10/best-background-for-website-03.jpg);
+    /* background-color: lightskyblue; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* filter: hue-rotate(120deg); */
+}
+
+
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.login .login--logo{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    object-fit: contain;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login .login--container{
+    width: 300px;
+    height: fit-content;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    background: rgb(255, 255, 255);
+    border-radius: 6px;
+    padding: 20px;
+}
+.login .login--container{
+    box-shadow: 0 5px 60px 0 rgba(5, 1, 255, 0.274);
+    /* transform: scale(1.0); */
+    /* box-shadow: 10px 10px grey; */
+    transition: 0.2s ease-in-out;
+    transition-delay: 0.1s;
+    /* filter: brightness(100%); */
+}
+.login .login--container::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+    /* background: linear-gradient(to bottom, rgba(6, 238, 226, 0.39) 0%, rgba(29, 172, 216, 0.1) 15%, transparent 85%, rgba(38, 209, 221, 0.3) 100%); */
+}
+
+.login .login--user{
+    color: black;
+    width: 20px;
+    margin-top: 13px;
+    margin-left: 10px;
+    position: absolute;
+    /* transform: scale(0.7);
+    filter: invert(1); */
+}
+.login .login--user img{
+    color: black;
+}
+
+.login .login--container h1{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.login .login--container h5{
+    margin-bottom: 5px;
+}
+.login .login--container input{
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    padding: 8px 10px;
+    padding-left: 40px;
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+    height: 30px;
+    /* padding-left: 10px; */
+    font-size: 15px;
+    /* margin-bottom: 10px; */
+    width: 80%;
+}
+
+.login .login--container p{
+    margin-top: 15px;
+    font-size: 12px;
+}
+.login .login--signButton{
+    background-color: rgba(255, 230, 0, 0.849);
+    color: rgb(233, 19, 19);
+    border-radius: 5px;
+    text-align: center;
+    /* margin-left: 100px; */
+    width: 40%;
+    height: 30px;
+    margin-top: 25px;
+    border-color: #a88734;
+}
+/* .login .login--signButton:hover{
+    background-color: yellow;
+    color: red;
+} */
+
+.login .login--registerButton{
+    background-color: yellow;
+    color: red;
+    border-radius: 5px;
+    text-align: center;
+    /* margin-left: 50px; */
+    width: 70%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login .information--amazon{
+    font-size: 13px;
+    color: blue;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.login .amazon--date{
+    font-size: 12px;
+}
+.icon{
+    margin-top: 60px;
+}
+.icons{
+    margin-left: 25px;
+    color: black;
+    width: 400px;
+    height: 40px;
+}
+.icons a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.icons ion-icon{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #0400ff;
+}
+@media screen and (max-width: 880px) {
+    .login--container{
+        width: 300px;
+    }
+}
